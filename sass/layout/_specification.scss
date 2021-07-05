@@ -1,0 +1,40 @@
+.specification {
+    padding-top: 0;
+}
+
+.specification-image {
+    
+    display: flex;
+}
+.specification-image__item {
+    margin-left: 30px; 
+}
+.specification-image__item:first-child {
+    margin-left: 0; 
+}
+.specification-image__application {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.specification-image__application::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    
+}
+.specification-image__name {
+    position: absolute;
+    bottom: 27px;
+    color: var(--main-bg-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    
+    
+}

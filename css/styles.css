@@ -1,11 +1,11 @@
-*,
+/**,
 *::before,
 *::after {
     box-sizing: border-box;
 }
                                                 
 /*часто используемые цвета*/
-:root {
+/*:root {
     --main-text-color: #757575;
     --title-text-color:  #212121;
     --accent-color: #2196F3;
@@ -13,7 +13,7 @@
     
 }
 /* основной шрифт, цвет фона и основной цвет текста*/ 
-body {
+/*body {
     max-width: 1600px;
     margin: 0 auto;
     background-color: var(--main-bg-color);
@@ -22,13 +22,13 @@ body {
     letter-spacing: 0.03em;
 }
 /* убираем точки у списка*/
-ul {
+/*ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 /* устанавливаем размеры контейнера*/
-.container {
+/*.container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -40,11 +40,11 @@ ul {
     padding-bottom: 94px;
 }
 /*убираем у ссылок подчеркивание*/
-a {
+/*a {
     text-decoration: none;
 }
 /*обязательно задаем*/
-img {
+/*img {
     display: block;
     width: 100%;
     height: auto;
@@ -57,13 +57,14 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin: 0;
     padding: 0;
-}
+}*/
+
 /* нижняя рамка блока навигации*/
-.header-nav {
+/*.header-nav {
     border-bottom: 1px solid #ECECEC;
 }
 /* распологаем меню навигации по гризонтали*/
-.main-nav {
+/*.main-nav {
     display: flex;
     align-items: center;
     
@@ -73,7 +74,7 @@ p {
     align-items: center;
 }
 /* шрифт,цвет логотипа */
-.main-nav__web {
+/*.main-nav__web {
     color: var(--accent-color);
     font-family: Raleway;
     font-size: 26px;
@@ -89,7 +90,7 @@ p {
 }
 /* шрифт,цвет, расположение ссылок в меню навигации */
 
-.main-nav__site {
+/*.main-nav__site {
     display: flex;
     margin-left: 93px;
    
@@ -163,10 +164,10 @@ p {
     width: 10px;
     height: 16px;
     fill: currentColor;
-}
+}*/
 
 /*Градиент*/
-.overlay {
+/*.overlay {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -188,7 +189,7 @@ p {
 }
 
 /* шрифт,цвет фона и заголовка героя, размеры*/
-.hero-title {
+/*.hero-title {
     margin-top: 0;
     margin-bottom: 30px;
     min-width: 696px;
@@ -201,7 +202,7 @@ p {
     text-transform: uppercase;
 }
 /* кнопка заказать услугу*/
-.button-order {
+/*.button-order {
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
@@ -214,21 +215,18 @@ p {
     font-weight: 700;
     line-height: 1.9;
     cursor: pointer;
-    /*transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: linear;
-    transition-delay: 250ms;*/
+    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-order:hover,
 .button-order:focus {
     background-color: #188CE8;
     
-}
+}*/
 
 /* цвет заголовков в секциях*/
 
-.section-title {
+/*.section-title {
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
@@ -236,12 +234,13 @@ p {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
-}
+}*/
 /* расположение, шрифт в секции особенности*/
-.footer-container {
+
+/*.footer-container {
     display: flex;
 }
-.features {
+/*.features {
     display: flex;
 }
 .features__item {
@@ -286,14 +285,12 @@ p {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
-}
+}*/
 /* расположение секции чем занимаемся*/
-.specification {
+/*.specification {
     padding-top: 0;
 }
-/*.specification-title {
-    text-align: center;
-}*/
+
 .specification-image {
     
     display: flex;
@@ -329,15 +326,15 @@ p {
     text-transform: uppercase;
     
     
-}
+}*/
 /* расположение карточек,шрифт в секции наша команда*/
-.team {
+/*.team {
 background: #F5F4FA;
 }
 /*.team-title {
     text-align: center;
 }*/
-.team-image {
+/*.team-image {
     display: flex;
 }
 .team-image__item{
@@ -407,9 +404,9 @@ background: #F5F4FA;
     border-right: 1px solid #EEEEEE; 
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
-}
-
-.klient {
+}*/
+/* Постоянные клиенты*/
+/*.klient {
     display: flex;
 }
 .klient__item {
@@ -418,8 +415,8 @@ background: #F5F4FA;
 .klient__item:first-child {
     margin-left: 0;
 }
-/* Постоянные клиенты*/
-.klient__link {
+
+/*.klient__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -442,19 +439,23 @@ background: #F5F4FA;
 .klient__link:hover .klient__logo,
 .klient__link:focus .klient__logo {
     fill: var(--accent-color);
-}
+}*/
+
 
 /* цвет фона футера и цвет логотипа*/
-.footer {
+
+/*.footer {
     display: flex;
     padding: 60px 0;
     background: #2F303A;
-    ;
+    
 }
+
 .footer .itemadres + .itemadres {
     margin-left: 70px;
 }
 .footer-container {
+    display: flex;
     align-items: baseline;
 }
 
@@ -596,11 +597,11 @@ color: var(--main-bg-color);
 .block-form__icon {
     margin-left: 10px;
     fill: var(--main-bg-color);
-}
+}*/
    
 /* стили ПОРТФОЛИО */
 /* кнопки фильтров*/
-.filter {
+/*.filter {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
@@ -634,10 +635,10 @@ color: var(--main-bg-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1),
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+}*/
 
 /*расположение карточек, цвет заголовков проектов*/
-.project {
+/*.project {
     display: flex;
     flex-wrap: wrap;
 }
@@ -714,4 +715,4 @@ margin-bottom: 30px;
 .example:hover .card__text,
 .example:focus .card__text {
     transform: translateY(-100%);
-}
+}*/
