@@ -56,8 +56,9 @@
     fill: #000000;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-.close-button:hover .icon-close,
-.close-button:focus .icon-close {
+
+.close-button:hover &,
+.close-button:focus & {
     fill: var(--accent-color);
+}
 }
