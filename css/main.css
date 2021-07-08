@@ -266,12 +266,6 @@ summary {
   --main-bg-color: #FFFFFF;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   max-width: 1600px;
   margin: 0 auto;
@@ -306,12 +300,7 @@ img {
   height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
@@ -324,7 +313,7 @@ p {
   padding-right: 15px;
 }
 
-.section-title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
@@ -344,7 +333,7 @@ p {
   align-items: center;
 }
 
-.nav-adres {
+.nav-adress {
   display: flex;
   align-items: center;
 }
@@ -374,6 +363,7 @@ p {
 
 .main-nav__item {
   margin-left: 50px;
+  position: relative;
 }
 
 .main-nav__link {
@@ -393,10 +383,6 @@ p {
 
 .main-nav__link--active {
   color: var(--accent-color);
-}
-
-.main-nav__item {
-  position: relative;
 }
 
 .main-nav__link--active::after {
@@ -469,7 +455,7 @@ p {
 }
 
 /* шрифт,цвет фона и заголовка героя, размеры*/
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   min-width: 696px;
@@ -482,7 +468,7 @@ p {
 }
 
 /* кнопка заказать услугу*/
-.button-order {
+.hero__button {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
@@ -497,7 +483,7 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-order:hover, .button-order:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188CE8;
 }
 
@@ -507,9 +493,6 @@ p {
 
 .features__item {
   width: 270px;
-}
-
-.features__item {
   margin-left: 30px;
 }
 
@@ -517,7 +500,7 @@ p {
   margin-left: 0;
 }
 
-.features__item::before {
+.features__item:first-child::before {
   display: flex;
 }
 
@@ -583,7 +566,7 @@ p {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.specification-image__name {
+.specification-image__title {
   position: absolute;
   bottom: 27px;
   color: var(--main-bg-color);
@@ -609,14 +592,14 @@ p {
   margin-left: 0px;
 }
 
-.team-card__name {
+.team-image__name {
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.team-card__profession {
+.team-image__discription {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 16px;
@@ -663,7 +646,7 @@ p {
   fill: var(--main-bg-color);
 }
 
-.team-card {
+.team-image__card {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -675,20 +658,20 @@ p {
   border-left: 1px solid #EEEEEE;
 }
 
-.klient {
+.client {
   display: flex;
 }
 
-.klient__item {
+.client__item {
   margin-left: 30px;
 }
 
-.klient__item:first-child {
+.client__item:first-child {
   margin-left: 0;
 }
 
 /* Постоянные клиенты*/
-.klient__link {
+.client__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -699,17 +682,17 @@ p {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.klient__link:hover, .klient__link:focus {
+.client__link:hover, .client__link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.klient__logo {
+.client__logo {
   background-position: center;
   fill: #AFB1B8;
 }
 
-.klient__link:hover .klient__logo,
-.klient__link:focus .klient__logo {
+.client__link:hover .client__logo,
+.client__link:focus .client__logo {
   fill: var(--accent-color);
 }
 
@@ -719,7 +702,7 @@ p {
   background: #2F303A;
 }
 
-.footer .itemadres + .itemadres {
+.footer .itemadress + .itemadress {
   margin-left: 70px;
 }
 
@@ -744,7 +727,7 @@ p {
   line-height: 1.2;
 }
 
-.adres__link {
+.adress__link {
   color: #FFFFFF99;
   font-size: 14px;
   font-style: normal;
@@ -753,7 +736,7 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adres__link:hover, .adres__link:focus {
+.adress__link:hover, .adress__link:focus {
   color: var(--accent-color);
 }
 
@@ -925,7 +908,7 @@ p {
   margin-bottom: 0;
 }
 
-.title__name {
+.box__title {
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 4px;
@@ -935,7 +918,7 @@ p {
   line-height: 2.0;
 }
 
-.title__specification {
+.box__discription {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--main-text-color);
@@ -944,7 +927,7 @@ p {
   line-height: 1.9;
 }
 
-.title {
+.box {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -962,12 +945,12 @@ p {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.card {
+.example__card {
   position: relative;
   overflow: hidden;
 }
 
-.card__text {
+.example__text {
   position: absolute;
   top: 100%;
   left: 0;
@@ -986,8 +969,8 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example:hover .card__text,
-.example:focus .card__text {
+.example:hover .example__text,
+.example:focus .example__text {
   transform: translateY(-100%);
 }
 

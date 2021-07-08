@@ -8,17 +8,18 @@
 }
 .specification-image__item {
     margin-left: 30px; 
-}
-.specification-image__item:first-child {
+
+&:first-child {
     margin-left: 0; 
+}
 }
 .specification-image__application {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-.specification-image__application::before {
+
+&::before {
     display: inline-block;
     position: absolute;
     content: "";
@@ -27,7 +28,8 @@
     background: rgba(47, 48, 58, 0.8);
     
 }
-.specification-image__name {
+}
+.specification-image__title {
     position: absolute;
     bottom: 27px;
     color: var(--main-bg-color);

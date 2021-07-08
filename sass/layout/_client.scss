@@ -1,14 +1,15 @@
-.klient {
+.client {
     display: flex;
 }
-.klient__item {
+.client__item {
     margin-left: 30px;
-}
-.klient__item:first-child {
+
+&:first-child {
     margin-left: 0;
 }
+}
 /* Постоянные клиенты*/
-.klient__link {
+.client__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -25,13 +26,12 @@
 
 }
 }
-.klient__logo {
+.client__logo {
     background-position: center;
     fill: #AFB1B8;
-}
 
-
-.klient__link:hover .klient__logo,
-.klient__link:focus .klient__logo {
+.client__link:hover &,
+.client__link:focus & {
     fill: var(--accent-color);
+}
 }

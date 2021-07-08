@@ -7,7 +7,7 @@
     align-items: center;
     
 }
-.nav-adres {
+.nav-adress {
     display: flex;
     align-items: center;
 }
@@ -35,6 +35,7 @@
 }
 .main-nav__item {
     margin-left: 50px;
+    position: relative;
 }
 .main-nav__link {
     display: block;
@@ -55,11 +56,9 @@
 }
 .main-nav__link--active {
     color: var(--accent-color);
-}
-.main-nav__item {
-    position: relative;
-}
-.main-nav__link--active::after{
+
+
+&::after{
     display: flex;
     content: "";
     position: absolute;
@@ -67,6 +66,7 @@
     bottom: -1px;
     border-bottom: 4px solid var(--accent-color);
     border-radius: 2px;
+}
 }
 .site-contact {
     display: flex;

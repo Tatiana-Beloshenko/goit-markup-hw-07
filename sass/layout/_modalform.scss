@@ -17,9 +17,10 @@ color: #212121;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-}
-.field-form:last-child {
+
+&:last-child {
     margin-top: 20px;
+}
 }
 .field-form label {
  margin-bottom: 4px;

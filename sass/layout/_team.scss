@@ -7,17 +7,18 @@
     }
     .team-image__item{
        margin-left: 30px; 
-    }
-    .team-image__item:first-child {
+    
+    &:first-child {
         margin-left: 0px; 
      }
-    .team-card__name {
+    }
+    .team-image__name {
         color: var(--title-text-color);
         font-size: 16px;
         font-weight: 500;
         line-height: 1.2;
     }
-    .team-card__profession {
+    .team-image__discription {
         margin-top: 10px;
         margin-bottom: 0;
         font-size: 16px;
@@ -31,9 +32,10 @@
     }
     .socialnet__item {
         margin-left: 10px;
-    }
-    .socialnet__item:first-child {
+    
+    &:first-child {
         margin-left: 0;
+    }
     }
     .socialnet__link {
         display: flex;
@@ -62,7 +64,7 @@
     }
     }
     
-    .team-card {
+    .team-image__card {
         padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;

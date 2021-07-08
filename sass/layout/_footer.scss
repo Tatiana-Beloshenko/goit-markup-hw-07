@@ -3,10 +3,9 @@
     padding: 60px 0;
     background: #2F303A;
     
-}
-
-.footer .itemadres + .itemadres {
+& .itemadress + .itemadress {
     margin-left: 70px;
+}
 }
 .footer-container {
     display: flex;
@@ -29,7 +28,7 @@
     line-height: 1.2;
 }
 
-.adres__link {
+.adress__link {
     color: #FFFFFF99;
     font-size: 14px;
     font-style: normal;
@@ -60,9 +59,10 @@
 }
 .socialnet-footer__item {
     margin-left: 10px;
-}
-.socialnet-footer__item:first-child {
+
+&:first-child {
     margin-left: 0;
+}
 }
 .socialnet-footer_link {
     display: flex;

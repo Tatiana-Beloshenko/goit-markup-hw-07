@@ -20,7 +20,7 @@
 }
 
 /* шрифт,цвет фона и заголовка героя, размеры*/
-.hero-title {
+.hero__title {
     margin-top: 0;
     margin-bottom: 30px;
     min-width: 696px;
@@ -33,7 +33,7 @@
     text-transform: uppercase;
 }
 /* кнопка заказать услугу*/
-.button-order {
+.hero__button {
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
